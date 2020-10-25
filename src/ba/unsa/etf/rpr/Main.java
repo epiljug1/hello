@@ -17,11 +17,16 @@ public class Main {
         System.out.print("Unesite broj n: ");
         int n = ulaz.nextInt();
 
+
+        System.out.println("Brojevi koji su djeljivi sa svojom sumom cifara su: ");
+        int broj = 0;
         for(int i=1;i<=n;i++){
            if(i % sumaCifara(i) == 0){
+               broj = broj+1;
                 System.out.print(i + " ");
             }
         }
+        System.out.println("\nOd 1 do "+n+" takvih brojava ima: "+broj);
 
     }
 }
